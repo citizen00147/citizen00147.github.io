@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "ibm_plex_monoregular";
+  src: url("./fonts/ibmplexmono-regular-webfont.woff2") format("woff2"),
+    url("./fonts/ibmplexmono-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ibm_plex_monobold";
+  src: url("./fonts/ibmplexmono-bold-webfont.woff2") format("woff2"),
+    url("./fonts/ibmplexmono-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+form a,
+footer a {
+  color: #413f42;
+  text-decoration: none;
+  border-bottom: dashed #413f42 1px;
+  outline-style: none;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+body {
+  font-family: ibm_plex_monoregular;
+  background-color: #f0ebe3;
+  margin: 0;
+  outline-style: none;
+}
+
+button {
+  padding: 5px;
+}
+
+dialog {
+  border: black solid 2px;
+  border-radius: 2px;
+  max-width: 25em;
+  background: #f2f2f2;
+  width: 85%;
+  animation: fade-in 0.2s;
+}
+
+dialog img {
+  width: 150px;
+  height: auto;
+}
+
+footer {
+  background-color: #f2f2f2;
+  border-top: black solid 1px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+footer button {
+  float: right;
+  font-size: 1.2rem;
+  background: none;
+  border: black solid 2px;
+  border-radius: 2px;
+  box-shadow: -1px 2px #413f42;
+  margin-bottom: 5px;
+  padding: 6px;
+}
+
+h1 {
+  position: absolute;
+  /* background-color: #f2f2f2; */
+  border-right: black solid 2px;
+  border-bottom: black solid 2px;
+  border-radius: 2px;
+  padding: 3px;
+  top: 0;
+  margin-right: 25px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+
+hr {
+  border: solid 1px #413f42;
+  opacity: 35%;
+  width: 100px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.main-site {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.about-btn-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.about-btn-container button {
+  background: none;
+  font-size: 1.2rem;
+  border: black solid 2px;
+  border-radius: 2px;
+  box-shadow: -1px 2px #413f42;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -05px;
+}
+
+.header img {
+  width: 300px;
+  height: auto;
+  margin-left: -10px;
+  margin-top: 1px;
+}
+
+.container {
+  margin-top: 120px;
+  padding-bottom: 100px;
+}
+
+.project a {
+  color: #413f42;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.project {
+  display: flex;
+  background-color: #f2f2f2;
+  border: black solid 1px;
+  border-radius: 2px;
+  box-shadow: -5px 7px #413f42;
+  width: 18.75em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-desc {
+  padding: 10px;
+}
+
+.site-desc {
+  font-family: "ibm_plex_monobold";
+  font-size: 2.5rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 760px) {
+  .container {
+    margin-top: 200px;
+  }
+
+  .header img {
+    width: 400px;
+    height: auto;
+    margin-left: -10px;
+    margin-top: 1px;
+  }
+
+  .site-desc {
+    margin: auto;
+    width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  dialog img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  h3,
+  label {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin-top: 200px;
+  }
+
+  .project {
+    float: left;
+    margin-right: 25px;
+  }
+
+  .header img {
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin-left: -10px;
+    margin-top: 1px;
+  }
+
+  .site-desc {
+    margin: auto;
+    width: 600px;
+  }
+}
+
+@media (pointer: fine) {
+  a:hover {
+    opacity: 35%;
+  }
+
+  button:hover {
+    color: #f0ebe3;
+    background-color: #413f42;
+    opacity: 85%;
+    box-shadow: -2px 3px #413f42;
+  }
+}
