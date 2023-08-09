@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cmdme</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- <h1>cmdme</h1> -->
+      <img src="./images/cmdme-logo-svg.svg" alt="logo" />
+    </div>
+    <div class="container">
+      <div class="main-site">
+        <dialog id="aboutMe">
+          <form method="dialog">
+            <img src="./images/profilepicsvgface.svg" />
+            <label>hey there</label>
+            <p class="about-text">
+              my name is Mike, and this is my personal site (pronounced
+              <em>command me</em>) for showcasing projects i'm currently working
+              on. i want to build useful stuff before ai takes over my passion.
+            </p>
+            <p>
+              feel free to
+              <a href="mailto:developer@cmdme.dev" style="color: #413f42"
+                >email me</a
+              >
+            </p>
+            <p>
+              Or follow <a href="http://twitter.com/citizen00147">me</a> on
+              Twitter!
+            </p>
+            <p>
+              i like to write too, so give me a follow on
+              <a href="https://hashnode.com/@citizen00147">Hashnode</a>
+              and check out my <a href="http://blog.cmdme.dev">blog</a>!
+            </p>
+            <hr />
+            <p>
+              if you like what you see please consider
+              <a href="https://ko-fi.com/cmdme">buying me a coffee</a>!
+            </p>
+            <div class="about-btn-container">
+              <button value="cancel" style="color: #413f42">X</button>
+            </div>
+          </form>
+        </dialog>
+        <div class="project">
+          <a href="https://catcaller.netlify.app">
+            <div class="project-desc">
+              <h3>catcaller</h3>
+              <p>
+                a simple cat name generator built with vanilla HTML, CSS & JS
+              </p>
+            </div></a
+          >
+        </div>
+        <div class="project">
+          <a href="https://reply-to-me.up.railway.app/"
+            ><div class="project-desc">
+              <h3>reply to me</h3>
+              <p>a texting app built with EJS, Express, NodeJS & MongoDB</p>
+            </div></a
+          >
+        </div>
+        <div class="project">
+          <a href="https://ledgrly.netlify.app/"
+            ><div class="project-desc">
+              <h3>ledgrly</h3>
+              <p>a simple React note taking app that utilizes local storage</p>
+            </div></a
+          >
+        </div>
+      </div>
+      <footer>
+        <a href="https://blog.cmdme.dev">blog</a>
+        <a href="https://github.com/citizen00147">github</a>
+        <a href="https://resume.cmdme.dev">resume</a>
+        <button id="aboutMeDetails" style="color: #413f42">about</button>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
